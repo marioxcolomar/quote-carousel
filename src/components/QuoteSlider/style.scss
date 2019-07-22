@@ -1,0 +1,37 @@
+.slick-slider {
+  background-color: #000;
+  $white: #fff;
+  $secondary: #6E7986;
+  color: $white;
+  padding: 70px;
+  img {
+    margin: 0 auto;
+  }
+  h3 {
+    font-size: 40px;
+    margin: auto
+  }
+  p {
+    font-size: 16px;
+  }
+  .slick-dots {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      .slick-active {
+        background-color: $white;
+      }
+      li {
+        margin: 0px 2px;
+        background-color: #6E7986;
+        width: 10vh;
+        height: 4px;
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+}
