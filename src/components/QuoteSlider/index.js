@@ -11,14 +11,11 @@ class QuoteSlider extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 500,
+      speed: 1500,
       slidesToShow: 1,
       slidesToScroll: 1,
       fade: true,
-      swipe: true,
       autoplay: true,
-      autoplaySpeed: 2000,
-      easing: 'linear',
       appendDots: dots => (
         <div
           style={{
@@ -36,7 +33,13 @@ class QuoteSlider extends Component {
         {
           quotes.map((quote, i) => (
             <div key={i}>
-              <Quote id={quote.id} text={quote.text} name={quote.name} company={quote.company} />
+              <Quote
+                id={quote.id}
+                text={quote.text}
+                name={quote.name}
+                company={quote.company}
+                icon={quote.icon}
+              />
             </div>
           ))
         }
