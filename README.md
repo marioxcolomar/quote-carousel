@@ -1,4 +1,4 @@
-#Quote carousel
+# Quote carousel
 This repository is bootstraped from create-react-app. And makes use of [slick-carousel.](https://www.npmjs.com/package/slick-carousel)
 
 To run the project:
