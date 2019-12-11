@@ -11,7 +11,7 @@ class QuoteSlider extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 1500,
+      speed: 3000,
       slidesToShow: 1,
       slidesToScroll: 1,
       fade: true,
