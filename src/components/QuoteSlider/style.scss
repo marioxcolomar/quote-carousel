@@ -1,37 +1,51 @@
 .slick-slider {
-  background-color: #000;
-  $white: #fff;
-  $secondary: #6E7986;
-  color: $white;
-  padding: 70px;
-  img {
-    margin: 0 auto 30px;
-  }
-  h3 {
-    font-size: 40px;
-    margin: auto
-  }
-  p {
-    font-size: 16px;
-  }
-  .slick-dots {
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      .slick-active {
-        background-color: $white;
-      }
-      li {
-        margin: 0px 2px;
-        background-color: #6E7986;
-        width: 10vh;
-        height: 4px;
-        button {
-          width: 100%;
-        }
-      }
-    }
-  }
-  
+	background-color: #000;
+	$white: #fff;
+	$secondary: #6e7986;
+	color: $white;
+	padding: 70px;
+	img {
+		margin: 0 auto 30px;
+	}
+	h3 {
+		font-size: 40px;
+		margin: auto;
+	}
+	p {
+		font-size: 16px;
+	}
+	.slick-dots {
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			.slick-active {
+				background-color: $white;
+				button {
+					position: relative;
+					animation: progress 3s linear;
+				}
+				@keyframes progress {
+					0% {
+						background-color: #6e7986;
+						width: 0%;
+					}
+					100% {
+						background-color: #6e7986;
+						width: 100%;
+					}
+				}
+			}
+			li {
+				margin: 0px 2px;
+				background-color: #6e7986;
+				width: 10vh;
+				height: 4px;
+				button {
+					height: 4px;
+					padding: 0;
+				}
+			}
+		}
+	}
 }
